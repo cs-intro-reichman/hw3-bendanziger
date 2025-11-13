@@ -9,10 +9,12 @@ public class Algebra {
 	     // 2 + 3
 	   // System.out.println(minus(-7,-2));  // 7 - 2
    		//System.out.println(minus(2,7));  // 2 - 7
- 		//System.out.println(times(1,-4));  // 3 * 4
+ 		//System.out.println(times(-2,3));  // 3 * 4
    		//System.out.println(plus(2,times(4,2)));  // 2 + 4 * 2
-   	   // System.out.println(pow(5,3));      // 5^3
-   	     //System.out.println(pow(-2,3));      // 3^5
+   	   // 
+	   
+	        // 5^3
+   	     //System.out.println(pow(-2, 3));      // 3^5
    	//	System.out.println(div(12,3));   // 12 / 3    
    		//System.out.println(div(15,-5));    // 5 / 5  
    		//System.out.println(div(25,7));   // 25 / 7
@@ -20,7 +22,7 @@ public class Algebra {
    		//System.out.println(mod(120,6));  // 120 % 6    
    	//	System.out.println(sqrt(36));
 		//System.out.println(sqrt(263169));
-   	//	System.out.println(sqrt(76123));
+   	System.out.println(sqrt(76123));
 	}  
 
 	// Returns x1 + x2
@@ -63,7 +65,7 @@ public class Algebra {
         return 0;
 		}
 		else if(x2 > 0){ 
-		for(int i=1; i < x2; i++){
+		for(int i=0; i < x2; i++){
       x3 = plus(x3, x1);
 	  }
 	}
@@ -120,6 +122,9 @@ public class Algebra {
 	// Returns the integer part of sqrt(x) 
 	public static int sqrt(int x) {
 		int x3 = 0;
+		if(x == 0){
+			return 0;
+		}
 		while(times(x3, x3) <= x){
         x3++;
 		}
