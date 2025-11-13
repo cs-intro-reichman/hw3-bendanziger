@@ -14,7 +14,7 @@ public class Algebra {
    	   // 
 	   
 	        // 5^3
-   	     //System.out.println(pow(-2, 3));      // 3^5
+   	     System.out.println(pow(2, 0));      // 3^5
    	//	System.out.println(div(12,3));   // 12 / 3    
    		//System.out.println(div(15,-5));    // 5 / 5  
    		//System.out.println(div(25,7));   // 25 / 7
@@ -83,7 +83,7 @@ public class Algebra {
 	public static int pow(int x, int n) {
 		int x3 =x;
 		if(n == 0){
-			return x;
+			return 1;
 		}
 		else{
 		for(int i=1; i < n; i++){
